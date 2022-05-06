@@ -1,0 +1,25 @@
+@import "common.css";
+
+.header {
+  background-color: #FFD11A;
+  height: 50px; 
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  background-color: #F2F4F5;
+}
+
+.content > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.content .text {
+  margin: 0 auto;
+  width: 60vw;
+  background-color: #F2F4F5;
+  padding: 20px;
+  box-shadow: 2px 2px 6px  rgba(0, 0, 0, 0.25)
+}

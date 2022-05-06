@@ -1,60 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif ;
-}
-
-/* NAVBAR */
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 60px;
-  background-color: transparent;
-  box-shadow: 0 0 10px black;
-  padding: 0 20px;
-  position: fixed;
-  transition: height .5s ease;
-  transition: background-color .5s ease;
-  z-index: 3;
-}
-
-.scrolling-active {
-  background-color: #FFD11A;
-  height: 50px; 
-}
-
-.menu {
-  display: flex;
-}
-
-.menu  li {
-  list-style-type: none;
-  position: relative;
-  padding-top: 8px;
-}
-
-.menu > li a {
-  padding: 17px;
-  color: #000000;
-  font-size: 14px;
-  text-decoration: none;
-  display: block;
-}
-
-.menu > li:hover {
-  background: #eec317;
-  transition: background-color ease 0.5s;
-}
-
-.menu > li:hover > .submenu, 
-.submenu > li:hover > .submenu {
-  display:block;
-}
-
+@import "common.css";
 /* HOME SECTION */
 
 .home {
@@ -69,26 +13,20 @@
 
 .home h1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 45%;
+  transform: translate(-40%, -45%);
   color: #ffffff;
+  font-size: 2rem;
+  font-style: italic;
+  text-align: center;
 }
 
 button {
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
-  transform: translate(-60%, -50%);
-}
-
-button a {
-  text-decoration: none;
-  color: #FFC107;
-}
-
-button:hover a {
-  color:#000000;
+  transform: translate(-55%, -50%);
 }
 
 /* SCREEN SECTION */
@@ -131,10 +69,17 @@ button:hover a {
   top: 7%;
   left: 20%;
   transform: translate(-7%, -20%);
+  color: #000000;
+  font-weight: bold;
+}
+
+.screen-itens > a:hover {
+  color: #777575;
 }
 
 .screen-itens > p {
   margin-top: 3vh;
+  margin-left: 3.3vw;
   display: inline-block;
   font-size: 1rem;
   width: 40vw;
@@ -161,19 +106,19 @@ button:hover a {
   margin-top: -30vh;
 }
 
+.row-reverse img {
+  margin-right: 2vw;
+}
+
 .row-reverse > a {
   margin-top: 1vh;
-  margin-left: 75vh;
+  margin-left: 28.5vw;
+  font-weight: bold;
 }
 
 .row-reverse > p {
   margin-top: 3vh;
-  margin-left: 75vh;
-}
-
-.screen-itens + .row-reverse .itens-button {
-  margin-left: 75vh;
-  margin-top: 1vh;
+  margin-left: 32vw;
 }
 
 /* CAROUSEL SECTION */
